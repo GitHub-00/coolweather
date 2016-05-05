@@ -18,13 +18,13 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
             +"ID INTEGER PRIMARY KEY AUTOINCREMENT, "
             +"CITY_NAME TEXT, "
             +"CITY_CODE TEXT, "
-            +"PROVINCE_ID INTEGER";
+            +"PROVINCE_ID INTEGER)";
 
     public static final String CREATE_COUNTRY="CREATE TABLE COUNTRY ("
             +"ID INTEGER PRIMARY KEY AUTOINCREMENT, "
             +"COUNTRY_NAME TEXT, "
             +"COUNTRY_CODE TEXT, "
-            +"CITY_ID INTEGER";
+            +"CITY_ID INTEGER)";
 
 
     public CoolWeatherOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
